@@ -1,5 +1,46 @@
 {
-  "extends": [
-    "config:base"
+  "extends":["config:base"],
+  "baseBranches": ["master"],
+  "dependencyDashboard": "true",
+  "dependencyDashboardHeader": "- [ ] Sync upstream helm chart version with updated dependencies.",
+  "dependencyDashboardTitle": "Renovate: Upgrade zarf Package Dependencies",
+  "draftPR": "true",
+  "labels": ["renovate"],
+  "regexManagers": [
+    {
+      "fileMatch": ["^packages/gitea/zarf\\.yaml$"],
+      "matchStrings": [
+        "version:\\s+(?<currentValue>.+)"
+      ],
+      "datasourceTemplate": "helm",
+      "depNameTemplate": "gitea"
+    },
+    {
+      "fileMatch": ["^packages/logging-pgl/zarf\\.yaml$"],
+      "matchStrings": [
+        "version:\\s+(?<currentValue>.+)"
+      ],
+      "datasourceTemplate": "helm",
+      "depNameTemplate": "loki-stack"
+    }
+  ],
+  "packageRules": [
+    {
+      "datasources": ["helm"],
+      "managers": ["regex"],
+      "packageNames": [
+        "gitea"
+      ],
+      "registryUrls": ["https://dl.gitea.io/charts"]
+    },
+    {
+      "datasources": ["helm"],
+      "managers": ["regex"],
+      "packageNames": [
+        "loki-stack"
+      ],
+      "registryUrls": ["https://grafana.github.io/helm-charts"]
+    }
   ]
+
 }
