@@ -13,7 +13,7 @@ components:
     charts:
       - name: loki-stack
         url: https://grafana.github.io/helm-charts
-        version: 2.6.4
+        version: 2.6.3
         namespace: zarf
         valuesFiles:
           - pgl-values.yaml
