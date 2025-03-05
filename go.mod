@@ -23,7 +23,7 @@ require (
 	github.com/go-logr/logr v1.2.3
 	github.com/goccy/go-yaml v1.9.5
 	github.com/google/go-containerregistry v0.9.0
-	github.com/k3d-io/k3d/v5 v5.4.1
+	github.com/k3d-io/k3d/v5 v5.8.3
 	github.com/mattn/go-colorable v0.1.12
 	github.com/mholt/archiver/v3 v3.5.1
 	github.com/otiai10/copy v1.7.0
