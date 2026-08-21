@@ -31,7 +31,7 @@ require (
 	github.com/pterm/pterm v0.12.41
 	github.com/sigstore/cosign v1.8.1-0.20220529135101-46be4a674e67 // Temporary fix for sigstore/cosign dep vuln until v1.9.0
 	github.com/spf13/cobra v1.4.0
-	github.com/stretchr/testify v1.7.1
+	github.com/stretchr/testify v1.12.1
 	github.com/testifysec/go-witness v0.1.10
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e
 	gopkg.in/yaml.v2 v2.4.0
@@ -45,6 +45,8 @@ require (
 	sigs.k8s.io/kustomize/kyaml v0.13.7
 	sigs.k8s.io/yaml v1.3.0
 )
+
+require github.com/Masterminds/semver/v3 v3.1.1
 
 require (
 	bitbucket.org/creachadair/shell v0.0.6 // indirect
@@ -66,7 +68,6 @@ require (
 	github.com/CycloneDX/cyclonedx-go v0.4.0 // indirect
 	github.com/MakeNowJust/heredoc v0.0.0-20170808103936-bb23615498cd // indirect
 	github.com/Masterminds/goutils v1.1.1 // indirect
-	github.com/Masterminds/semver/v3 v3.1.1 // indirect
 	github.com/Masterminds/sprig/v3 v3.2.2 // indirect
 	github.com/Masterminds/squirrel v1.5.2 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
@@ -368,6 +369,7 @@ require (
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
 	go.uber.org/zap v1.21.0 // indirect
+	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	go4.org/intern v0.0.0-20211027215823-ae77deb06f29 // indirect
 	go4.org/unsafe/assume-no-moving-gc v0.0.0-20211027215541-db492cf91b37 // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220106191415-9b9b3d81d5e3 // indirect
